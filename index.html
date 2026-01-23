@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="styles.css" rel="stylesheet" type="text/css"/>
+  <link rel="manifest" href="manifest.json"/>
+  <link href='https://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet'>
+  <title> Speedometer </title>
+</head>
+<body>
+<header>
+  Speedometer
+</header>
+<main>
+  <div id="speed" hidden> -- </div>
+  <div id="unit" hidden> MPH </div>
+  <div id="street" hidden> --  </div>
+  <div id="limit" hidden>  </div>
+
+  <div id="settings">
+    <form id="settingsForm" name="settingsForm">
+      Unit :
+      <br>
+      <input type="radio" name="unitSettingForm" value="MPH" checked>
+      <label>MPH</label>
+      <input type="radio" name="unitSettingForm" value="KM/H">
+      <label>KM/H</label>
+      <input type="radio" name="unitSettingForm" value="local">
+      <label>Local</label>
+      <br>
+      <br>
+      Text colour :
+      <br>
+      <input id="textColourForm" type="color" name="textColour" value="#ffffff"/>
+      <br>
+      <br>
+      Background colour :
+      <br>
+      <input id="backgroundColourForm" type="color" name="backgroundColour" value="#000000"/>
+      <br>
+      <br>
+      Speed limit side :
+      <br>
+      <input type="radio" name="limitSettingForm" value="Left" checked>
+      <label>Left</label>
+      <input type="radio" name="limitSettingForm" value="Right">
+      <label>Right</label><br>
+      <br>
+      <br>
+      <input type="submit" value="Apply">
+    </form>
+  </div>
+
+
+</main>
+<script src="speed.js"></script>
+</body>
+</html>

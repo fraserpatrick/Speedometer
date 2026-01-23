@@ -1,0 +1,43 @@
+body {
+    background-color: black;
+    color: white;
+    height: 100vh;
+    text-align: center;
+    font-family: Orbitron;
+    font-weight: 700;
+}
+header{
+    color:gray;
+    font-size: 5dvw;
+}
+
+#speed {
+    font-size: min(40dvw,45dvh);
+}
+
+#unit{
+    font-size: 5dvw;
+}
+
+#street{
+    font-size: 3dvw;
+}
+
+#limit{
+    position: absolute;
+    bottom: 2dvh;
+    color: black;
+    background-color: white;
+    border-radius: 100%;
+    font-size: 3dvw;
+    height: 8dvw;
+    width: 8dvw;
+    border: 1dvw solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#settings{
+    padding-top: 3dvh;
+}
